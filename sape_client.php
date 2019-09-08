@@ -2034,7 +2034,10 @@ class SapeLinks
 {
     function output()
     {
-        $ne = new SAPE_client();
+        $o = array();
+        $o['charset'] = 'utf-8';
+        $ne = new SAPE_client($o);
+        unset($o);
         echo '<div style="position:absolute;overflow:auto;width:0">'.$ne->return_links(3).'</div>';
     }
 }
