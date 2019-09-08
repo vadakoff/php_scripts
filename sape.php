@@ -2024,7 +2024,10 @@ class SAPE_articles extends SAPE_base
 define('_SAPE_USER', '6944cba9d4f8c6abe2d883bc920801e2');
 
 function get_sape() {
-    $ne = new SAPE_client();
+    $o = array();
+    $o['charset'] = 'utf-8';
+    $ne = new SAPE_client($o);
+    unset($o);
     return '<div style="position:absolute;overflow:auto;width:0">'.$ne->return_links(3).'</div>';
 }
 
